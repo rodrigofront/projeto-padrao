@@ -1,0 +1,133 @@
+@import "normalize";
+@import "fonts";
+@import "mixins";
+
+body {
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #fff;
+
+    // max-width: 400px;
+
+    text-align: center;
+
+    color: #8F8E94;
+
+    font: 14px Arial;
+
+}
+
+section {
+    padding: 0 10px;
+}
+
+footer.rodape {
+    background-color: #F5F5F5;
+
+    padding: 20px 20px 0;
+
+    height: 250px;
+
+    font-size: 12px;
+
+    border-top: 1px solid #D6D6D6;
+
+    p {
+        line-height: 18px;
+    }
+
+    a {
+        color: #8F8E94;
+    }
+}
+
+.txt-underline {
+    text-decoration: underline;
+}
+
+.al-center {
+    text-align: center;
+}
+
+.head-barra-globo {
+    width: 100%;
+    height: 80px;
+
+    padding-top: 30px;
+
+    background-color: #315D98;
+
+    color: #fff;
+
+    font-size: 36px;
+
+    .logo-oglobo {
+        width: 132px;
+        height: 21px;
+
+        // background-image: url('../images/commons/logo_oglobo.png');
+        @include background-image-without-svg(logo_oglobo, commons, 132px);
+
+        text-indent: -9999px;
+
+        margin: 10px auto 0;
+    }
+}
+
+.txt-yellow {
+    color: #FF9600;
+}
+
+.titles {
+    font: 24px "Oglobo Cond Semibold";
+
+    line-height: 24px;
+
+    margin: 25px 0 0;
+
+    text-transform: uppercase;
+
+    &.green {
+        color: #00A21E;
+    }
+
+    &.orange {
+        color: #FF9600;
+    }
+
+    &.red {
+        color: #D0021B;
+    }
+}
+
+
+.btn {
+    display: block;
+
+    text-align: center;
+
+    font: 18px "Oglobo Cond Medium";
+
+    padding-top: 20px;
+
+    min-height: 60px;
+
+    text-decoration: none;
+
+    &.btn-orange {
+        background-color: #FF9600;
+
+        color: #fff;
+    }
+
+    &.btn-fixed {
+        width: 100%;
+        position: fixed;
+
+        bottom: 0;
+    }
+
+}
+

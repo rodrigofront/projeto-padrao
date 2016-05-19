@@ -1,0 +1,25 @@
+doctype
+html( lang="pt-br" )
+    head
+        title Experimente Aviso
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        
+        // chamada para estilo do Bootstrap
+        link(href="../../styles/fluxos.css", rel="stylesheet")
+        //- script(src="../../scripts/main.min.js")
+ 
+    body
+        include partials/_header
+
+        section.fluxo-erros
+
+            h1.titles.orange
+                |  VOCÊ AINDA NÃO É UM ASSINANTE
+
+            p.text-fluxos  Deseja experimentar os produtos digitais do Globo por 30 dias gratuitamente?
+            
+            a(href="").btn.btn-orange.btn-fluxos
+                |  SIM, CLARO!
+

@@ -1,0 +1,57 @@
+doctype
+html( lang="pt-br" )
+    head
+        title Experimente
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Todos os componentes do Bootstrap em JADE' )
+        
+        // chamada para estilo do Bootstrap
+        link(href="../../styles/experimente.css", rel="stylesheet")
+        //- script(src="../../scripts/main.min.js")
+ 
+    body
+        include partials/_header
+        
+        .al-center
+            img.img-globo-apps(src="../../images/commons/produtos-globo.png", alt="O Globo Apps")
+        
+        section
+
+            h1.title-degustacao
+                |  GANHE, POR 
+                span.txt-yellow 30 DIAS
+                |  , ACESSO GRATUITO E ILIMITADO AOS PRODUTOS DIGITAIS DO GLOBO
+            
+            ul.produtos-digitais
+                li.site
+                    span.title
+                        |  SITE O GLOBO
+                    p  Acesso ao site com notícias, reportagens exclusivas, colunistas, blogs, vídeos e etc.
+
+                li.digital
+                    span.title
+                        |  JORNAL DIGITAL
+                    p  Versão digitalizada do Globo, todos os dias, na tela do seu tablet, computador ou celular.
+                
+                li.noticias
+                    span.title
+                        |  O GLOBO NOTÍCIAS
+                    p  As últimas notícias no seu smartphone com alertas das notícias mais importantes.
+
+                li.acervo
+                    span.title
+                        |  ACERVO
+                    p  Edições digitalizadas do jornal O Globo desde 1925.
+
+                li.ebooks
+                    span.title
+                        |  E-BOOKS
+                    p  Livros digitais exclusivos em diversos temas para ler nos dispositivos móveis.
+
+        include partials/_footer
+
+        a(href="#").btn.btn-orange.btn-fixed
+            |  QUERO EXPERIMENTAR
+            |  &gt;

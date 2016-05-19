@@ -1,0 +1,38 @@
+//---------------------------------------------------------------------------
+// Background Image Fallback
+//---------------------------------------------------------------------------
+
+$fallback-extension: "png" !default;
+$path: "";
+$retina-suffix: "@2x";
+
+
+@mixin background-image($name, $path, $size:false) {
+    background-image: url(../images/#{$path}/#{$name}.svg);
+    @if($size) {
+        background-size: $size;
+    }
+
+    .no-svg & {
+        background-image: url(../images/#{$path}/#{$name}.#{$fallback-extension});
+
+        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+            background-image: url(../images/#{$path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+        }
+    }
+}
+
+
+@mixin background-image-without-svg($name, $path, $size:false) {
+    background-image: url(../images/#{$path}/#{$name}.png);
+
+    @if($size) {
+        background-size: $size;
+    }
+
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url(../images/#{$path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+    }
+
+
+}

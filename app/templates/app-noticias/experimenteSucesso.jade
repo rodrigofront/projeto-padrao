@@ -1,0 +1,29 @@
+doctype
+html( lang="pt-br" )
+    head
+        title Experimente Sucesso
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        
+        // chamada para estilo do Bootstrap
+        link(href="../../styles/fluxos.css", rel="stylesheet")
+        //- script(src="../../scripts/main.min.js")
+ 
+    body
+        include partials/_header
+
+        section
+
+            h1.titles.green
+                |  PARABÉNS! SUA SOLICITAÇÃO FOI CONCLUÍDA
+
+            p.text-fluxos  Você receberá um e-mail com os dados do seu pedido para experimentar por 30 dias grátis
+            
+            .al-center.box-globo-apps-sucesso
+                img.img-globo-apps-sucesso(src="../../images/commons/produtos-globo.png", alt="O Globo Apps")
+                .icon-confirmation
+            
+            .box-alert
+                strong Cadastrou-se agora na Globo.com? 
+                |  Ative seu cadastro através do link enviado pro seu e-mail.

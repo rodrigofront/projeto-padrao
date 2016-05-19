@@ -1,0 +1,26 @@
+{
+  "name": "Projeto Padrão",
+  "version": "1.0.0",
+  "description": "Descrição do projeto padrão.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Nogueira",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.6.5",
+    "del": "^2.2.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "2.1.0",
+    "gulp-cache": "0.2.8",
+    "gulp-concat": "2.5.2",
+    "gulp-imagemin": "2.2.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "1.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-stylus": "2.0.1",
+    "gulp-uglify": "1.2.0"
+  }
+}

@@ -1,0 +1,105 @@
+@import "bootstrap/grid";
+
+
+//---------------------------------------------------------------------------
+// Grid utils
+//---------------------------------------------------------------------------
+
+// all devices
+.grid-alpha {
+    padding-left: 0 !important;
+}
+
+.grid-omega {
+    padding-right: 0 !important;
+}
+
+
+// fix padding
+.grid-fix-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+
+    @include grid-selector(">") {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+//grid-spacing
+@include desktop-view {
+    .grid-alpha-desktop {
+        padding-left: 0 !important;
+    }
+
+    .grid-omega-desktop {
+        padding-right: 0 !important;
+    }
+}
+
+// grid-spacing
+@include landscape-view {
+    .grid-alpha-landscape {
+        padding-left: 0 !important;
+    }
+
+    .grid-omega-landscape {
+        padding-right: 0 !important;
+    }
+}
+
+// grid-spacing
+@include portrait-view {
+    .grid-alpha-portrait {
+        padding-left: 0 !important;
+    }
+
+    .grid-omega-portrait {
+        padding-right: 0 !important;
+    }
+}
+
+// grid-spacing
+@include mobile-view {
+    .grid-alpha-mobile {
+        padding-left: 0 !important;
+    }
+
+    .grid-omega-mobile {
+        padding-right: 0 !important;
+    }
+}
+
+// grid-spacing
+@include portrait-view {
+    .tablet-grid-spacing {
+        @include grid-selector(">") {
+            padding-top: 20px;
+
+            &:first-of-type,
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@include mobile-view {
+    .grid-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .mobile-grid-spacing {
+        @include grid-selector(">") {
+            padding-top: 20px;
+
+            &:first-of-type,
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}
+

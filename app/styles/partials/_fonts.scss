@@ -1,0 +1,46 @@
+//---------------------------------------------------------------------------
+// Font-face
+//---------------------------------------------------------------------------
+@font-face {
+    font-family: "OgloboX Cond Regular";
+    src: url("../fonts/Oglobo_XCond_Webfonts/OgloboX-Cond-Regular.eot");
+    src: url("../fonts/Oglobo_XCond_Webfonts/OgloboX-Cond-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Oglobo_XCond_Webfonts/OgloboX-Cond-Regular.woff") format("woff"),
+        url("../fonts/Oglobo_XCond_Webfonts/OgloboX-Cond-Regular.ttf") format("truetype"),
+        url("../fonts/Oglobo_XCond_Webfonts/OgloboX-Cond-Regular.svg#ogloboxcondsemibold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oglobo Cond Semibold";
+    src: url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Semibold.eot");
+    src: url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Semibold.woff") format("woff"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Semibold.ttf") format("truetype"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Semibold.svg#oglobocondsemibold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oglobo Cond Regular";
+    src: url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Regular.eot");
+    src: url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Regular.woff") format("woff"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Regular.ttf") format("truetype"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Regular.svg#oglobocondregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oglobo Cond Medium";
+    src: url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Medium.eot");
+    src: url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Medium.woff") format("woff"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Medium.ttf") format("truetype"),
+        url("../fonts/Oglobo_Cond_Webfonts/OgloboCond-Medium.svg#oglobocondregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
