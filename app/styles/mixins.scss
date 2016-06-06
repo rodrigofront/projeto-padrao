@@ -1,0 +1,114 @@
+//---------------------------------------------------------------------------
+// Placeholders Fallback
+//---------------------------------------------------------------------------
+// grid
+@mixin grid-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+// grid
+@mixin grid-padding-responsive {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@mixin grid-zero-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+// utils
+@mixin text-overflow {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+        display: block;
+        overflow: hidden;
+
+        height: 0;
+
+        content: "\0020";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+//---------------------------------------------------------------------------
+// Selectors
+//---------------------------------------------------------------------------
+// grid
+@mixin grid-selector ($selector: "") {
+    #{$selector} [class^='grid-'],
+    #{$selector} [class*=' grid-'],
+    #{$selector} [class^='tablet-grid-'],
+    #{$selector} [class*=' tablet-grid-'],
+    #{$selector} [class^='mobile-grid-'],
+    #{$selector} [class*=' mobile-grid-'] {
+        @content;
+    }
+}
+
+//---------------------------------------------------------------------------
+// Responsive Utils
+//---------------------------------------------------------------------------
+// desktop view
+@mixin desktop-view {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+// landscape view
+@mixin landscape-view {
+    @media screen and (min-width: 840px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+// portrait view
+@mixin portrait-view {
+    @media screen and (min-width: 600px) and (max-width: 839px) {
+        @content;
+    }
+}
+
+// mobile view
+@mixin mobile-view {
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
+// view
+@mixin view ($t1, $t2: "", $t3: "", $t4: "") {
+    $types: ($t1, $t2, $t3, $t4);
+    $media: "";
+
+    @each $type in $types {
+        @if ($type == "desktop") {
+            $media: "(min-width: 1024px)";
+        }
+        @if ($type == "landscape") {
+            $media: "(min-width: 840px) and (max-width: 1023px)";
+        }
+        @if ($type == "portrait") {
+            $media: "(min-width: 600px) and (max-width: 839px)";
+        }
+        @if ($type == "mobile") {
+            $media: "(max-width: 599px)";
+        }
+
+        @media screen and #{$media} {
+            @content;
+        }
+    }
+}
