@@ -7,12 +7,14 @@ html( lang="pt-br" )
         meta( name='viewport', content='width=device-width, initial-scale=1.0' )
         meta( name='description', content='Todos os componentes do Bootstrap em JADE' )
         
-        // chamada para estilo do Bootstrap
         link(href="../../styles/register.css", rel="stylesheet")
  
     body
+        include partials/_header
+
         .grid-container
             .grid-50.landscape-grid-100.portrait-grid-100.mobile-grid-50
-                p Testando
+                h1 Continue lendo O Globo
+                h2 Faça seu login ou cadastre-se
             .grid-50.landscape-grid-100.portrait-grid-100.mobile-grid-50
-                p Olha ele
+                p To ai
