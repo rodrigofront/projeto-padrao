@@ -1,0 +1,93 @@
+//---------------------------------------------------------------------------
+// Useful Classes */
+//---------------------------------------------------------------------------
+// relative
+.relative { position: relative; }
+
+// float
+.fleft { float: left; }
+.fright { float: right; }
+
+.fleft-imp { float: left !important; }
+.fright-imp { float: right !important; }
+
+// display
+.block,
+.show {
+    display: block;
+}
+
+.block-imp {
+    display: block !important;
+}
+
+.none,
+.hide {
+    display: none;
+}
+
+// display
+.inline-block {
+    display: inline-block !important;
+}
+
+// font style
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.strike { text-decoration: line-through; }
+.underline { text-decoration: underline; }
+
+// font size
+.font-big { font-size: 120%; }
+
+// text-align
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-center-imp { text-align: center !important; }
+.text-left-imp { text-align: left !important; }
+.text-right-imp { text-align: right !important; }
+
+
+// bullet list
+.bullet-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    list-style-image: none;
+}
+
+// uppercase
+.text-uppercase { text-transform: uppercase; }
+
+// align
+.align-top { vertical-align: top; }
+.align-middle { vertical-align: middle; }
+.align-bottom { vertical-align: bottom; }
+.align-text-bottom { vertical-align: text-bottom; }
+
+// no-responsive
+.no-responsive { width: auto; }
+
+//margin
+.margin-top-5 {margin-top: 5px;}
+.margin-top-10 {margin-top: 10px;}
+.margin-top-15 {margin-top: 15px;}
+.margin-top-20 {margin-top: 20px;}
+
+.margin-left-5 {margin-left: 5px;}
+.margin-left-10 {margin-left: 10px;}
+.margin-left-15 {margin-left: 15px;}
+.margin-left-20 {margin-left: 20px;}
+
+.margin-right-5 {margin-right: 5px;}
+.margin-right-10 {margin-right: 10px;}
+.margin-right-15 {margin-right: 15px;}
+.margin-right-20 {margin-right: 20px;}
+
+.margin-bottom-5 {margin-bottom: 5px;}
+.margin-bottom-10 {margin-bottom: 10px;}
+.margin-bottom-15 {margin-bottom: 15px;}
+.margin-bottom-20 {margin-bottom: 20px;}
+
+

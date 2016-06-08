@@ -7,14 +7,24 @@ html( lang="pt-br" )
         meta( name='viewport', content='width=device-width, initial-scale=1.0' )
         meta( name='description', content='Todos os componentes do Bootstrap em JADE' )
         
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,300italic,100' rel='stylesheet')
         link(href="../../styles/register.css", rel="stylesheet")
  
     body
         include partials/_header
-
-        .grid-container
-            .grid-50.landscape-grid-100.portrait-grid-100.mobile-grid-50
-                h1 Continue lendo O Globo
-                h2 Faça seu login ou cadastre-se
-            .grid-50.landscape-grid-100.portrait-grid-100.mobile-grid-50
-                p To ai
+        
+        .banner-responsive-register
+            .grid-container
+                .grid-55.landscape-grid-100.portrait-grid-100.mobile-grid-50
+                    h1 Continue lendo O Globo
+                    h2 Faça seu login ou cadastre-se
+                .grid-45.landscape-grid-100.portrait-grid-100.mobile-grid-50
+                    .box-iframe-login
+                        iframe(width='340', height='360', scrolling='auto', frameborder='no', src='https://login.globo.com/login/4975?url=http://oglobo.globo.com&tam=widget&tamCadastro=widget')
+            .rodape-cima
+                p
+                    i.icon-check.inline-block  
+                    |  Quer ter acesso ilimitado a todos os produtos digitais do Globo? 
+                    a(href="#") Experimente 1 mês grátis › 
+            .rodape-baixo
+                p  Dúvidas? Ligue 4002-5300 (capitais e grandes cidades) ou 0800 021 8433 (demais localidades).

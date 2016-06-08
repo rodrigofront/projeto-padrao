@@ -118,7 +118,7 @@
 // Background Image Fallback
 //---------------------------------------------------------------------------
 
-$path : '../images';
+$image-path : '../images';
 $fallback-extension: "png" !default;
 $path: "";
 $retina-suffix: "@2x";
@@ -137,4 +137,29 @@ $retina-suffix: "@2x";
             background-image: url(#{$image-path}/#{$path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
         }
     }
+}
+
+//---------------------------------------------------------------------------
+// Hide Text
+//---------------------------------------------------------------------------
+
+@mixin hide-text {
+    display: block;
+    overflow: hidden;
+    text-indent: -9000px;
+}
+
+//---------------------------------------------------------------------------
+// Background Responsive
+//---------------------------------------------------------------------------
+
+//$name com formato (ex: servicos-produtos.jpg)
+@mixin background-responsive($name, $path) {
+    width: 100%;
+
+    background-image: url(#{$image-path}/#{$path}/#{$name});
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
