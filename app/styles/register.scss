@@ -2,10 +2,20 @@
 
 @import "partials/_header-register";
 
+html, body {
+    height: 100%;
+}
+
+object {
+    display: none;
+}
+
+
 .banner-responsive-register {
     @include background-responsive('bg-responsive-register.jpg', 'register');
     position: relative;
 
+    height: 100%;
     min-height: 750px;
 
     padding-top: 75px;
