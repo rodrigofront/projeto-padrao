@@ -6,6 +6,10 @@ html, body {
     height: 100%;
 }
 
+body img:last-child {
+    display: none;
+}
+
 object {
     display: none;
 }
@@ -16,7 +20,7 @@ object {
     position: relative;
 
     height: 100%;
-    min-height: 750px;
+    min-height: 550px;
 
     padding-top: 75px;
 
@@ -29,7 +33,8 @@ object {
         font-size: 71px;
         font-weight: 900;
 
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+        line-height: 1;
     }
 
     h2 {
@@ -39,12 +44,28 @@ object {
         font-weight: 400;
         font-style: italic;
 
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
     }
 
-    .box-iframe-login {
-        background-color: #fff;
-        padding: 30px;
+    .box-text-iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        margin-top: -250px;
+        margin-left: -490px;
+
+
+        .box-iframe-login {
+            float: right;
+
+            width: 400px;
+            height: 380px;
+
+            background-color: #fff;
+
+            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .5);
+        }
     }
 
     .rodape-cima {
@@ -53,7 +74,7 @@ object {
         width: 100%;
         height: 120px;
         padding-top: 49px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, .5);
 
         font-size: 18px;
         font-weight: 400;
@@ -66,6 +87,14 @@ object {
 
             color:#FF8A00;
             text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .arrow {
+            color: #FF8A00;
         }
 
         .icon-check {
@@ -101,6 +130,22 @@ object {
 
 .cadun-flow-container {
     height: 300px !important;
+}
+
+
+@media screen and (max-height: 720px) {
+    .banner-responsive-register {
+        .box-text-iframe {
+            margin-top: -220px;
+        }
+
+        .rodape-cima {
+            height: 60px;
+
+            padding-top: 20px;
+        }
+    }
+
 }
 
 

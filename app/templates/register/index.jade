@@ -13,17 +13,24 @@ html( lang="pt-br" )
     body
         .banner-responsive-register
             include partials/_header
-            .grid-container
-                .grid-55.landscape-grid-100.portrait-grid-100.mobile-grid-50
+            .grid-container.box-text-iframe
+                .grid-60.landscape-grid-100.portrait-grid-100.mobile-grid-50
                     h1 Continue lendo O Globo
                     h2 Faça seu login ou cadastre-se
-                .grid-45.landscape-grid-100.portrait-grid-100.mobile-grid-50
+                .grid-40.landscape-grid-100.portrait-grid-100.mobile-grid-50
                     .box-iframe-login
-                        iframe(width='340', height='360', scrolling='auto', frameborder='no', src='https://login.globo.com/login/4975?url=http://oglobo.globo.com&tam=widget&tamCadastro=widget')
+                        iframe(width='400', height='380', scrolling='yes', frameborder='no', src='https://login.globo.com/login/4975?url=http://oglobo.globo.com')
             .rodape-cima
                 p
                     i.icon-check.inline-block  
                     |  Quer ter acesso ilimitado a todos os produtos digitais do Globo? 
-                    a(href="#") Experimente 1 mês grátis › 
+                    a(href="#") 
+                        strong Experimente 1 mês grátis  
+                    span.arrow  
+                        strong › 
             .rodape-baixo
-                p  Dúvidas? Ligue 4002-5300 (capitais e grandes cidades) ou 0800 021 8433 (demais localidades).
+                p  Dúvidas? Ligue 
+                    strong 4002-5300 
+                    |  (capitais e grandes cidades) ou 
+                    strong 0800 021 8433 
+                    |  (demais localidades).
