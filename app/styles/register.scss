@@ -129,7 +129,9 @@ object {
 }
 
 .cadun-flow-container {
-    height: 300px !important;
+    height: auto !important;
+    min-height: auto !important;
+    padding-top: 20px;
 }
 
 
