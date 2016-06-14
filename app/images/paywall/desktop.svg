@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Paywall-2-produtos-V2" transform="translate(-1126.000000, -1031.000000)" fill="#222222">
+            <g id="PRODUTO" transform="translate(360.000000, 272.000000)">
+                <g id="Group-9-Copy" transform="translate(500.000000, 60.000000)">
+                    <g id="Group-17" transform="translate(0.000000, 431.000000)">
+                        <g id="th" transform="translate(0.000000, 255.000000)">
+                            <g id="Group-27" transform="translate(152.000000, 13.000000)">
+                                <path d="M126.25,0 L117,0 C115.34325,0 114,1.34325 114,3 L114,16.5 C114,18.15675 115.34325,19.5 117,19.5 L125,19.5 L125,22.5 L123.5,22.5 C123.08525,22.5 122.75,22.836 122.75,23.25 C122.75,23.66475 123.08525,24 123.5,24 L132.5,24 C132.91475,24 133.25,23.66475 133.25,23.25 C133.25,22.836 132.91475,22.5 132.5,22.5 L131,22.5 L131,19.5 L138.25,19.5 C139.90675,19.5 141.25,18.15675 141.25,16.5 L141.25,3 C141.25,1.34325 139.90675,0 138.25,0 L126.25,0 Z M126.5,19.5 L129.5,19.5 L129.5,22.5 L126.5,22.5 L126.5,19.5 Z M138.25,18 L117,18 C116.172,18 115.5,17.328 115.5,16.5 L115.5,15 L139.75,15 L139.75,16.5 C139.75,17.328 139.078,18 138.25,18 Z M115.5,13.5 L115.5,3 C115.5,2.172 116.172,1.5 117,1.5 L138.25,1.5 C139.078,1.5 139.75,2.172 139.75,3 L139.75,13.5 L115.5,13.5 Z" id="desktop"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

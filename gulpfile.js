@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     jade = require('gulp-jade'),
     del = require('del'),
+    spritesmith = require('gulp.spritesmith'),
     browserSync = require('browser-sync');
 
 
@@ -76,6 +77,29 @@ gulp.task('scripts', function(){
     .pipe(browserSync.reload({stream:true}))
 });
 
+// gulp.task('sprite', function () {
+//     var spriteData = gulp.src('app/img/sprites/*.png')
+//         .pipe(spritesmith({
+//             /* this whole image path is used in css background declarations */
+//             retinaSrcFilter: ['app/img/sprites/*@2x.png'],
+//             imgName: '../img/sprite.png',
+//             retinaImgName: 'sprite@2x.png',
+//             cssName: 'sprite.css'
+//         }));
+//     spriteData.img.pipe(gulp.dest('img'));
+//     spriteData.css.pipe(gulp.dest('css'));
+// });
+
+// gulp.task('sprite', function () {
+//   var spriteData = gulp.src('app/images/sprites/*.png').pipe(spritesmith({
+//     retinaSrcFilter: ['app/images/sprites/*@2x.png'],
+//     imgName: 'sprite.png',
+//     retinaImgName: 'sprite@2x.png',
+//     cssName: 'sprite.scss'
+//   }));
+//   return spriteData.pipe(gulp.dest('app/images/spritesGerados'));
+// });
+
 // Clean
 gulp.task('clean', function() {
   return del(['dist/styles', 'dist/scripts', 'dist/images', 'dist/templates']);
@@ -83,11 +107,12 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.start('templates', 'styles', 'scripts', 'images');
+  gulp.start('templates', 'styles', 'scripts',  'images');
 });
 
 gulp.task('server', ['browser-sync'], function(){
-  gulp.start('templates', 'styles', 'scripts', 'images');
+  gulp.start('templates', 'styles', 'scripts',  'images');
+  // gulp.watch("app/img/sprites/*.png", ['sprite']);
   gulp.watch("app/images/**/*", ['images']);
   gulp.watch("app/styles/**/*.scss", ['styles']);
   gulp.watch("app/scripts/**/*.js", ['scripts']);

@@ -1,0 +1,28 @@
+html, body {
+    font-family: "Lato";
+}
+
+@import "base";
+
+@import "partials/_header-paywall";
+
+
+section.produtos {
+    @include background-responsive('bg.png', 'paywall');
+    height: 2000px;
+}
+
+.box-plans {
+    margin-top: -90px;
+
+    padding: 60px;
+
+    background-color: #fff;
+
+    border-radius: 3px;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@import "partials/_plans-details";

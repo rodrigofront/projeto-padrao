@@ -125,17 +125,13 @@ $retina-suffix: "@2x";
 
 
 @mixin background-image($name, $path, $size:false) {
-    background-image: url(#{$image-path}/#{$path}/#{$name}.svg);
+    background-image: url(#{$image-path}/#{$path}/#{$name}.png);
     @if($size) {
         background-size: $size;
     }
 
-    .no-svg & {
-        background-image: url(#{$image-path}/#{$path}/#{$name}.#{$fallback-extension});
-
-        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-            background-image: url(#{$image-path}/#{$path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
-        }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url(#{$image-path}/#{$path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
     }
 }
 

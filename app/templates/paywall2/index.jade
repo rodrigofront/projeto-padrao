@@ -1,0 +1,75 @@
+doctype
+html( lang="pt-br" )
+    head
+        title Paywall 2 ofertas
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible', content='IE=edge' )
+        meta( name='viewport', content='width=device-width, initial-scale=1.0' )
+        meta( name='description', content='Todos os componentes do Bootstrap em JADE' )
+        
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,300italic,100,300' rel='stylesheet')
+        link(href="../../styles/paywall.css", rel="stylesheet")
+ 
+    body
+        include partials/_header
+
+
+        section.produtos
+            .grid-container
+                .box-plans.grid-100
+                    include partials/_plans_details
+                    .formas-pagamento.text-center
+                        |  Formas de pagamento
+                        i.icon-card-visa
+                        i.icon-card-mastercard
+                        i.icon-card-diners
+                        i.icon-card-american
+                        i.icon-card-santader
+                        i.icon-card-itau
+                        i.icon-card-bradesco
+
+            include partials/_timeline
+
+        section.banner-premium
+            .grid-50
+                h3  Assinantes Premium têm acesso ilimitado ao Jornal Digital
+                a.btn.btn-orange  Assine o Premium
+            .grid-50
+                img(src="")
+
+        section
+            .grid-100
+                .box-gray
+
+            .grid-100
+                span.title  DEPOIMENTOS
+
+            .grid-75
+                span.depoimento-grande  "Adoro! Fico sabendo de forma rápida os últimos acontecimentos."
+
+                span.depoimento-origem  - GOOGLE PLAY
+
+            .grid-25
+                span.depoimento-grande  "É a minha principal fonte de informações. Recomendo!"
+
+                span.depoimento-origem  —  APPLE APP STORE
+            
+        section.blue
+            h4  Comece agora sua assinatura
+
+
+        section
+            .grid-100
+                span.title  DÚVIDAS?
+            .grid-100
+                span.telefones
+                    strong 4002-5300
+                    |  (capitais e grandes cidades)
+
+            .grid-100
+                span.telefones
+                    strong 0800 021 8433
+                    |  (demais localidades)
+
+            .grid-100
+
