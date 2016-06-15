@@ -107,7 +107,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-  gulp.start('templates', 'styles', 'scripts',  'images');
+  gulp.start('templates', 'styles', 'scripts', 'images');
 });
 
 gulp.task('server', ['browser-sync'], function(){
