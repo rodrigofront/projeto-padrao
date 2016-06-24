@@ -18,15 +18,8 @@ html( lang="pt-br" )
             .grid-container
                 .box-plans.grid-100
                     include partials/_plans_details
-                    .formas-pagamento.text-center
-                        |  Formas de pagamento
-                        i.icon-card-visa
-                        i.icon-card-mastercard
-                        i.icon-card-diners
-                        i.icon-card-american
-                        i.icon-card-santader
-                        i.icon-card-itau
-                        i.icon-card-bradesco
+                    include partials/_formas_pagamento
+
 
             include partials/_timeline
 

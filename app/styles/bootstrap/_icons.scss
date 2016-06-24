@@ -11,4 +11,114 @@
     line-height: 1;
 
     text-decoration: none;
+
+    &.icon-checked {
+      width: 14px;
+      height: 14px;
+      @include background-image(checked, sprites);
+    }
+
+    &.icon-unchecked {
+      width: 10px;
+      height: 11px;
+
+      margin-left: 2px;
+
+      @include background-image(unchecked, sprites);
+    }
+
+    &.icon-ios {
+      width: 21px;
+      height: 24px;
+
+      margin-left: 10px;
+
+      vertical-align: bottom;
+
+      @include background-image(ios, sprites);
+    }
+
+    &.icon-android {
+      width: 21px;
+      height: 24px;
+
+      margin-left: 2px;
+
+      vertical-align: bottom;
+
+      @include background-image(android, sprites);
+    }
+
+    &.icon-mobile {
+      width: 14px;
+      height: 24px;
+
+      margin-left: 2px;
+
+      vertical-align: bottom;
+
+      @include background-image(mobile, sprites);
+    }
+
+    &.icon-tablet {
+      width: 18px;
+      height: 24px;
+
+      margin-left: 2px;
+
+      vertical-align: bottom;
+
+      @include background-image(tablet, sprites);
+    }
+
+    &.icon-desktop {
+      width: 28px;
+      height: 24px;
+
+      margin-left: 2px;
+
+      vertical-align: bottom;
+
+      @include background-image(desktop, sprites);
+    }
+
+    &.icon-card {
+      width: 52px;
+      height: 36px;
+
+      margin-left: 8px;
+
+      vertical-align: middle;
+
+      &.icon-visa {
+        @include background-image(visa, sprites);
+      }
+
+      &.icon-mastercard {
+        @include background-image(mastercard, sprites);
+      }
+
+      &.icon-dinersclub {
+        @include background-image(dinersclub, sprites);
+      }
+
+      &.icon-americanexpress {
+        @include background-image(americanexpress, sprites);
+      }
+
+      &.icon-bradesco {
+        @include background-image(bradesco, sprites);
+      }
+
+      &.icon-itau {
+        @include background-image(itau, sprites);
+      }
+
+      &.icon-hsbc {
+        @include background-image(hsbc, sprites);
+      }
+    }
+
 }
+
+

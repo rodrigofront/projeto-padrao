@@ -65,9 +65,16 @@
         color: #373A3C;
 
         li {
+            height: 50px;
+
             padding: 14px;
             border-top: 1px solid #ECEEEF;
         }
+    }
+
+    [class^="icon-"],
+    [class*=" icon-"] {
+        margin-right: 12px;
     }
 
     &.plan-digital {
@@ -77,6 +84,16 @@
 
         .plan-title {
             color: #1FAAFF;
+        }
+    }
+
+    &.plan-premium {
+        .plan-image {
+            @include background-image('pack-digital-premium', 'paywall', 100%);
+        }
+
+        .plan-title {
+            color: #FFBC00;
         }
     }
 }
