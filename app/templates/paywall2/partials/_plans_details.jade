@@ -1,3 +1,5 @@
+include _mixins
+
 .grid-50
     .plan.plan-digital
         .grid-100
@@ -93,11 +95,7 @@
                     i.icon-checked
                     |  Jornal Digital
 
-                    i.icon-ios
-                    i.icon-android
-                    i.icon-mobile
-                    i.icon-tablet
-                    i.icon-desktop
+                    +icons_device(['ios', 'android'])
 
         .grid-100
             a.btn.btn-premium.btn-large.margin-top-10  Assine o Premium

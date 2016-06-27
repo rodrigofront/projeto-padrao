@@ -3,9 +3,11 @@ html, body {
 }
 
 @import "base";
-
 @import "partials/_header-paywall";
-
+@import "partials/_plans-details";
+@import "partials/_timeline";
+@import "partials/_buttons";
+@import "bootstrap/_label";
 
 section.produtos {
     @include background-responsive('bg.png', 'paywall');
@@ -24,19 +26,12 @@ section.produtos {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-
-@import "partials/_plans-details";
-
 .formas-pagamento {
     margin-top: 40px;
 
     font-size: 14px;
 
     color: #999999;
-}
-
-.box-timeline {
-    margin-top: 120px;
 }
 
 .subtitle {
@@ -48,4 +43,3 @@ section.produtos {
     text-shadow: 0 2px 2px #fff;
 }
 
-@import "partials/_buttons";
