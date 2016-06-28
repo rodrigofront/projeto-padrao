@@ -1,0 +1,12 @@
+mixin icons_device (devices) 
+    - if (devices) 
+        - each device, i in devices
+             i(class=icon-{device})
+            //- option(value=option)&attributes(optionsAttrs.length > 0 ? optionsAttrs[i] : {}) 
+            //-     =option
+
+//- i.icon-ios
+//- i.icon-android
+//- i.icon-mobile
+//- i.icon-tablet
+//- i.icon-desktop
