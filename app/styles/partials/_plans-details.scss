@@ -72,11 +72,6 @@
         }
     }
 
-    [class^="icon-"],
-    [class*=" icon-"] {
-        margin-right: 12px;
-    }
-
     &.plan-digital {
         .plan-image {
             @include background-image('pack-digital', 'paywall', 100%);

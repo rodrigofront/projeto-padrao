@@ -5,6 +5,9 @@
 [class*=" icon-"] {
     display: inline-block;
 
+    margin-top: 10px;
+    margin-right: 12px;
+
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 
@@ -119,6 +122,9 @@
       }
     }
 
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
 

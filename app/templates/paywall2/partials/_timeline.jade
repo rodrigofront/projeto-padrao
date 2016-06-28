@@ -1,3 +1,5 @@
+include _mixins
+
 .grid-container.box-timeline
     .grid-100
         h2.subtitle.text-center
@@ -9,25 +11,37 @@
                 |  JORNAL DIGITAL
             .timeline-content
                 |  Notícias atualizadas, reportagens exclusivas, colunistas, blogs, vídeos e muito mais.
+                div
+                    +icons_device(['ios', 'android', 'mobile', 'tablet', 'desktop'])
         li.premium
             span  
                 .label.label-premium  Só no Premium
                 |  CLUBE O GLOBO SOU + RIO
             .timeline-content
                 |  Benefícios exclusivos no Programa de Relacionamento do Globo.
+                div
+                    +icons_device(['ios', 'android', 'mobile'])
         li
             span  SITE O GLOBO
             .timeline-content
                 |  Notícias atualizadas, reportagens exclusivas, colunistas, blogs, vídeos e muito mais.
+                div
+                    +icons_device(['mobile', 'tablet', 'desktop'])
         li
             span  APLICATIVO O GLOBO NOTÍCIAS
             .timeline-content
                 |  Leia as últimas notícias em tempo real no seu smartphone e receba alertas com as notícias mais importantes.
+                div
+                    +icons_device(['ios', 'android', 'mobile'])
         li
             span  ACERVO
             .timeline-content
                 |  Consulta às edições do Globo publicadas desde 1925: fotos, publicidades, charges e muito mais.
+                div
+                    +icons_device(['desktop'])
         li
             span  E-BOOKS
             .timeline-content
                 |  Livros digitais exclusivos sobre temas variados, como educação, saúde, política, esportes, entre outros.
+                div
+                    +icons_device(['ios', 'android', 'mobile', 'tablet', 'desktop'])

@@ -1,12 +1,111 @@
 mixin icons_device (devices) 
     - if (devices) 
         - each device, i in devices
-             i(class=icon-{device})
-            //- option(value=option)&attributes(optionsAttrs.length > 0 ? optionsAttrs[i] : {}) 
-            //-     =option
+             i(class='icon-' + device)
 
-//- i.icon-ios
-//- i.icon-android
-//- i.icon-mobile
-//- i.icon-tablet
-//- i.icon-desktop
+mixin plan_details (EhCompleta)
+    .grid-50
+        .plan.plan-digital
+            .grid-100
+                .plan-image
+            
+            .grid-100
+                .plan-title
+                    |  O GLOBO DIGITAL
+            .grid-100
+                .plan-price-old
+                    |  R$ 14,90
+            .grid-100
+                .plan-price
+                    span.price-giant 5
+                    .box-price-cents-time
+                        span.price-cents ,90
+                        span.price-time  /MÊS
+
+                    span.price-condition  nos 6 primeiros meses
+            
+            - if (EhCompleta)
+                .grid-100
+                    ul.plan-items
+                        li  
+                            i.icon-checked
+                            |  Site O Globo
+
+                        li  
+                            i.icon-checked
+                            |  Aplicativo O Globo Notícias
+
+                        li  
+                            i.icon-checked
+                            |  Acervo
+
+                        li  
+                            i.icon-checked
+                            |  eBooks
+
+                        li  
+                            i.icon-checked
+                            |  Clube O Globo Sou+Rio
+
+                        li  
+                            i.icon-unchecked
+                            |  Jornal Digital
+
+            .grid-100
+                a.btn.btn-blue.btn-large.margin-top-10  Assine
+
+    .grid-50
+        .plan.plan-premium
+            .grid-100
+                .plan-image
+            
+            .grid-100
+                .plan-title
+                    |  O GLOBO DIGITAL PREMIUM
+            .grid-100
+                .plan-price-old
+                    |  R$ 29,90
+            .grid-100
+                .plan-price
+                    span.price-giant 14
+                    .box-price-cents-time
+                        span.price-cents ,90
+                        span.price-time  /MÊS
+
+                    span.price-condition  nos 6 primeiros meses
+            
+            - if (EhCompleta)
+                .grid-100
+                    ul.plan-items
+                        li  
+                            i.icon-checked
+                            |  Site O Globo
+
+                        li  
+                            i.icon-checked
+                            |  Aplicativo O Globo Notícias
+
+                        li  
+                            i.icon-checked
+                            |  Acervo
+
+                        li  
+                            i.icon-checked
+                            |  eBooks
+
+                        li  
+                            i.icon-checked
+                            |  Clube O Globo Sou+Rio
+
+                        li  
+                            i.icon-checked
+                            |  Jornal Digital
+
+            .grid-100
+                a.btn.btn-premium.btn-large.margin-top-10  Assine o Premium
+
+
+
+
+
+

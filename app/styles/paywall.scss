@@ -11,7 +11,7 @@ html, body {
 
 section.produtos {
     @include background-responsive('bg.png', 'paywall');
-    height: 2000px;
+    height: 2250px;
 }
 
 .box-plans {
@@ -27,6 +27,13 @@ section.produtos {
 }
 
 .formas-pagamento {
+    span {
+        display: inline-block;
+        margin-right: 10px;
+
+        vertical-align: middle;
+    }
+
     margin-top: 40px;
 
     font-size: 14px;
@@ -43,3 +50,91 @@ section.produtos {
     text-shadow: 0 2px 2px #fff;
 }
 
+.banner-premium {
+    @include background-responsive('flip-bg.png', 'paywall');
+    height: 600px;
+
+    h3 {
+        margin-top: 140px;
+
+        font-size: 70px;
+        font-weight: 300;
+
+        font-style: italic;
+
+        color: #B5C3CE;
+    }
+
+    img {
+        margin-top: 160px;
+    }
+}
+
+.box-gray {
+    margin: 120px 0;
+
+    background-color: #F2F2F2;
+
+    border: 1px solid #DDDDDD;
+
+    padding: 60px;
+
+    h4 {
+        font-size: 24px;
+        line-height: 24px;
+
+        font-weight: 400;
+
+        color: #F7AC00;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        color: #2A2C2E;
+    }
+}
+
+.title {
+    font-size: 24px;
+
+    color: #1FAAFF;
+}
+
+.depoimento-grande {
+    font-size: 48px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 60px;
+
+    color: #222;
+}
+
+.depoimento-pequeno {
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 39px;
+
+    color: #222;
+}
+
+.depoimento-origem {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #999;
+}
+
+.blue {
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: #E1ECF3;
+
+    .subtitle {
+        margin-bottom: 75px;
+    }
+}

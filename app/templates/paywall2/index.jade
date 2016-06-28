@@ -1,3 +1,5 @@
+include partials/_mixins
+
 doctype
 html( lang="pt-br" )
     head
@@ -24,45 +26,75 @@ html( lang="pt-br" )
             include partials/_timeline
 
         section.banner-premium
-            .grid-50
-                h3  Assinantes Premium têm acesso ilimitado ao Jornal Digital
-                a.btn.btn-orange  Assine o Premium
-            .grid-50
-                img(src="")
+            .grid-container
+                .grid-65
+                    h3  Assinantes Premium têm acesso ilimitado ao Jornal Digital
+                    a.btn.btn-premium.btn-width-medium.margin-top-30(href="#")  Assine o Premium
+                .grid-35
+                    img(src="../../images/paywall/flip.png")
 
         section
-            .grid-100
-                .box-gray
+            .grid-container
+                .grid-100
+                    .box-gray
+                        .grid-container
+                            .grid-50
+                                img(src="../../images/paywall/clube.png")
+                            .grid-45.prefix-5
+                                h4  ASSINANTES PREMIUM TEM BENEFÍCIOS EXCLUSIVOS
+                                p.margin-top-10  O Clube O Globo Sou+Rio é o programa de relacionamento exclusivo para assinantes premium. Para aproveitar as ofertas, basta apresentar a carteirinha digital nos estabelecimentos parceiros ou trocar seus pontos por ofertas de cinemas, teatros, restaurantes entre outros. Aproveite!
 
-            .grid-100
-                span.title  DEPOIMENTOS
+            
+            .grid-container.grid-parent
 
-            .grid-75
-                span.depoimento-grande  "Adoro! Fico sabendo de forma rápida os últimos acontecimentos."
+                .grid-100
+                    span.title  DEPOIMENTOS
+                
+                .grid-container
+                    .grid-75.grid-alpha
+                        .depoimento-grande  “Adoro! Fico sabendo de forma rápida os últimos acontecimentos.“
 
-                span.depoimento-origem  - GOOGLE PLAY
+                        .depoimento-origem  - GOOGLE PLAY
 
-            .grid-25
-                span.depoimento-grande  "É a minha principal fonte de informações. Recomendo!"
+                    .grid-25.grid-parent
+                        .depoimento-pequeno  “É sempre bom poder estar por dentro de tudo que acontece.”
 
-                span.depoimento-origem  —  APPLE APP STORE
+                        .depoimento-origem  —  GOOGLE PLAY
+                .grid-container.grid-parent
+                    .grid-25.margin-top-30.grid-parent
+                        .depoimento-pequeno  “É a minha principal fonte de informações. Recomendo!“
+
+                        .depoimento-origem  - APPLE APP STORE
+
+                    .grid-75.margin-top-30
+                        .depoimento-grande  “Gosto muito! Adoro poder ler o jornal em qualquer parte do mundo.”
+
+                        .depoimento-origem  —  APPLE APP STORE
             
         section.blue
-            h4  Comece agora sua assinatura
+            .grid-container
+                .grid-100
+                    h2.subtitle.text-center
+                        |  Comece agora sua assinatura
+                .grid-100
+                    +plan_details(false)
 
 
         section
-            .grid-100
-                span.title  DÚVIDAS?
-            .grid-100
-                span.telefones
-                    strong 4002-5300
-                    |  (capitais e grandes cidades)
+            .grid-container
+                .grid-100.margin-bottom-20
+                    span.title  DÚVIDAS?
+                .grid-100.margin-bottom-10
+                    span  Central de Relacionamento
+                .grid-100
+                    span.telefones
+                        strong 4002-5300
+                        |  (capitais e grandes cidades)
 
-            .grid-100
-                span.telefones
-                    strong 0800 021 8433
-                    |  (demais localidades)
+                .grid-100
+                    span.telefones
+                        strong 0800 021 8433
+                        |  (demais localidades)
 
-            .grid-100
+                .grid-100
 
