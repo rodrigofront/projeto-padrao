@@ -17,20 +17,20 @@ html( lang="pt-br" )
 
 
         section.produtos
-            .grid-container
-                .box-plans.grid-100
-                    include partials/_plans_details
+            .grid-container.mobile-grid-parent
+                .box-plans.grid-100.mobile-grid-100.mobile-grid-parent
+                    include partials/_plans_details_mobile
                     include partials/_formas_pagamento
 
 
-            include partials/_timeline
+            include partials/_timeline_mobile
 
         section.banner-premium
-            include partials/_banner_premium
+            include partials/_banner_premium_mobile
             
 
         section
-            .grid-container
+            .grid-container.hide-on-mobile
                 include partials/_box_sou_mais_rio
 
             
@@ -44,3 +44,11 @@ html( lang="pt-br" )
 
         include partials/_footer
 
+        script(src='https://code.jquery.com/jquery-3.0.0.min.js', integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=", crossorigin="anonymous")
+        
+        script(type='text/javascript').
+            $('body').on('click', '.btn-detalhes-plano' , function(event){
+                event.preventDefault();
+                $(this).siblings('.plan-items').toggle();
+            });
+            

@@ -11,19 +11,34 @@ html, body {
 
 section.produtos {
     @include background-responsive('bg.png', 'paywall');
-    height: 2250px;
+    height: 2150px;
+
+    @include view (mobile) {
+        background-image: none;
+    }
 }
 
 .box-plans {
     margin-top: -90px;
 
-    padding: 55px;
+    padding: 55px 35px;
 
     background-color: #fff;
 
     border-radius: 3px;
 
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+    @include mobile-view {
+        margin-top: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    @include view (mobile) {
+        background-color: transparent;
+    }
 }
 
 .formas-pagamento {
@@ -32,6 +47,11 @@ section.produtos {
         margin-right: 10px;
 
         vertical-align: middle;
+
+        @include view (mobile) {
+            display: block;
+            margin-right: 0;
+        }
     }
 
     margin-top: 40px;
@@ -48,6 +68,10 @@ section.produtos {
     color: #244670;
 
     text-shadow: 0 2px 2px #fff;
+
+    @include view (mobile) {
+        font-size: 36px;
+    }
 }
 
 .banner-premium {
@@ -63,10 +87,25 @@ section.produtos {
         font-style: italic;
 
         color: #B5C3CE;
+
+        @include view (mobile) {
+            font-size: 36px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
     }
 
     img {
         margin-top: 160px;
+
+        @include view (mobile) {
+            max-width: 280px;
+            text-align: center;
+            margin-top: 40px;
+            display: block;
+            margin: 40px auto 0;
+
+        }
     }
 }
 
@@ -137,4 +176,14 @@ section.produtos {
     .subtitle {
         margin-bottom: 75px;
     }
+}
+
+.text-gray {
+    color: #666;
+    line-height: 24px;
+}
+
+.rodape-barra {
+    margin-top: 80px;
+    margin-bottom: 65px;
 }

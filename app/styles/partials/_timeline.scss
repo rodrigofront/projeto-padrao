@@ -19,6 +19,15 @@
         padding-left: 30px;
         padding-bottom: 85px;
 
+        @include view (mobile) {
+          width: 97%;
+          margin-left: 10px;
+          left: 0;
+
+          padding-left: 20px;
+          padding-bottom: 30px;
+        }
+
         .timeline-content {
           font-size: 18px;
           line-height: 24px;
@@ -38,6 +47,21 @@
           color: #1FAAFF;
 
           text-transform: uppercase;
+
+          @include view (mobile) {
+            position: relative;
+            left: 0;
+            font-size: 18px;
+            padding-left: 0;
+            padding-right: 0;
+
+            .label {
+              margin-top: 3px;
+              margin-bottom: 5px;
+              margin-left: 5px;
+              margin-right: 0;
+            }
+          }
         }
 
         &:before {
@@ -70,5 +94,9 @@
           }
         }
       }
+    }
+
+    @include view (mobile) {
+      margin-top: 60px;
     }
 }

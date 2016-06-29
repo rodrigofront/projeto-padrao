@@ -15,6 +15,8 @@
 
     text-decoration: none;
 
+    background-size: 100%;
+
     &.icon-checked {
       width: 14px;
       height: 14px;
@@ -124,6 +126,10 @@
 
     &:first-child {
         margin-left: 0;
+    }
+
+    @include view (mobile) {
+        margin-right: 4px;
     }
 }
 
