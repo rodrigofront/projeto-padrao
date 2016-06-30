@@ -135,6 +135,21 @@
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 
+    .icon-chevron {
+        float: right;
+
+        width: 12px;
+        height: 7px;
+
+        &.icon-chevron-up {
+          @include background-image(chevron-up, sprites);
+        }
+
+        &.icon-chevron-down {
+          @include background-image(chevron-down, sprites);
+        }
+    }
+
     &.closed {
         background-image: linear-gradient(-180deg, #F5F5F5 0%, #FFFFFF 50%);
     }

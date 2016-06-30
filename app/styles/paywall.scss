@@ -138,28 +138,51 @@ section.produtos {
     font-size: 24px;
 
     color: #1FAAFF;
+
+    @include view (mobile) {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 0 15px;
+        font-size: 21px;
+    }
 }
 
 .depoimento-grande {
+    padding: 0 15px;
     font-size: 48px;
     font-weight: 300;
     font-style: italic;
     line-height: 60px;
 
     color: #222;
+
+    @include view(mobile) {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 .depoimento-pequeno {
+    margin-top: 20px;
+    padding: 0 15px;
+
     font-size: 28px;
     font-weight: 300;
     font-style: italic;
     line-height: 39px;
 
     color: #222;
+
+    @include view(mobile) {
+        font-size: 32px;
+        line-height: 36px;
+    }
 }
 
 .depoimento-origem {
     margin-top: 15px;
+    padding: 0 15px;
+
     font-size: 14px;
     color: #999;
 }
@@ -186,4 +209,26 @@ section.produtos {
 .rodape-barra {
     margin-top: 80px;
     margin-bottom: 65px;
+}
+
+section.footer {
+    @include view(mobile) {
+        margin-top: 40px;
+        border-top: 1px solid #DDDDDD;
+
+        .title {
+            padding: 0;
+        }
+    }
+
+
+    .box-selos {
+        img {
+            display: inline-block;
+            margin-top: 20px;
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
 }
